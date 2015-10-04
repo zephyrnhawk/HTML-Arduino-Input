@@ -24,10 +24,30 @@ http://projects.sindrelindstad.com
   print(onoroff[0]);  // Prints whatever is in the file ("1" or "0")
  
   if (onoroff[0].equals("1") == true) {
-    println(" - TELLING ARDUINO TO TURN LED ON");
+    println(" - TELLING ARDUINO TO TURN PIN 1 ON");
     port.write('1'); // Send "H" over serial to set LED to HIGH
- 
-  } else {
+ } 
+   else if (onoroff[0].equals("2") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 2 ON");
+    port.write('2'); // Send "H" over serial to set LED to HIGH
+  }
+   else if (onoroff[0].equals("3") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 3 ON");
+    port.write('3'); // Send "H" over serial to set LED to HIGH
+  }  
+   else if (onoroff[0].equals("4") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 4 ON");
+    port.write('4'); // Send "H" over serial to set LED to HIGH
+  }    
+   else if (onoroff[0].equals("5") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 5 ON");
+    port.write('5'); // Send "H" over serial to set LED to HIGH
+  }
+   else if (onoroff[0].equals("6") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 6 ON");
+    port.write('6'); // Send "H" over serial to set LED to HIGH
+  }  
+  else {
  
     println(" - TELLING ARDUINO TO TURN LED OFF");
     port.write('L');  // Send "L" over serial to set LED to LOW
