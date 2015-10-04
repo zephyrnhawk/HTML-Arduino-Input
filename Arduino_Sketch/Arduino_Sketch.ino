@@ -1,4 +1,3 @@
-const int ledPin = 2; // the pin that the LED is attached to - change this if you have a separate LED connected to another pin
 int incomingByte;      // a variable to read incoming serial data into
 int ledPins[] = {2, 3, 4, 5, 6, 7}; // LED pins
 int ledCnt = 13;
