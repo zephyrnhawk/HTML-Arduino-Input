@@ -25,7 +25,7 @@ http://projects.sindrelindstad.com
  
   if (onoroff[0].equals("1") == true) {
     println(" - TELLING ARDUINO TO TURN LED ON");
-    port.write('H'); // Send "H" over serial to set LED to HIGH
+    port.write('1'); // Send "H" over serial to set LED to HIGH
  
   } else {
  
