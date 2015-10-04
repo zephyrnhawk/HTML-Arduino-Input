@@ -23,11 +23,7 @@ http://projects.sindrelindstad.com
   String onoroff[] = loadStrings("http://connect.vtagames.com/DOKODUINO/LEDstate.txt"); // Insert the location of your .txt file
   print(onoroff[0]);  // Prints whatever is in the file ("1" or "0")
  
-  if (onoroff[0].equals("1") == true) {
-    println(" - TELLING ARDUINO TO TURN PIN 1 ON");
-    port.write('1'); // Send "H" over serial to set LED to HIGH
- } 
-   else if (onoroff[0].equals("2") == true) {
+  if (onoroff[0].equals("2") == true) {
     println(" - TELLING ARDUINO TO TURN PIN 2 ON");
     port.write('2'); // Send "H" over serial to set LED to HIGH
   }
@@ -46,6 +42,10 @@ http://projects.sindrelindstad.com
    else if (onoroff[0].equals("6") == true) {
     println(" - TELLING ARDUINO TO TURN PIN 6 ON");
     port.write('6'); // Send "H" over serial to set LED to HIGH
+  }  
+   else if (onoroff[0].equals("7") == true) {
+    println(" - TELLING ARDUINO TO TURN PIN 7 ON");
+    port.write('7'); // Send "H" over serial to set LED to HIGH
   }  
   else {
  
